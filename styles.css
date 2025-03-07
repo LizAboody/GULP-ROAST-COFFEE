@@ -1,0 +1,642 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* aboout */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #131D26;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #082B59;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(217, 133, 85, 0.2);
+}
+
+.about-content {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-content h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #59331d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content a {
+  color: #D98555;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #D98555;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #59331d;
+}
+
+.image-spots {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgba(217, 133, 85, 0.1); 
+}
+
+.image-spot {
+  width: 200px; 
+  height: 150px; 
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-spot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #131D26;
+  color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info, .social-links, .disclaimer {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+      width: 95%;
+  }
+  nav ul li {
+      margin: 0 10px;
+  }
+  nav ul li a {
+      padding: 6px 12px;
+  }
+  .contact-button {
+    padding: 10px 20px;
+  }
+  .image-spots {
+      flex-direction: column;
+      align-items: center;
+  }
+  .image-spot {
+      margin: 10px 0;
+  }
+}
+
+/* product-styles.css */
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #131D26;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #082B59;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 30%;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(217, 133, 85, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.product h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #59331d;
+  margin-top: 0;
+  text-align: center;
+}
+
+.product p {
+  color: #131D26;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #131D26;
+  color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info, .social-links, .disclaimer {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+  .product {
+      width: 90%;
+      margin: 10px auto;
+  }
+  nav ul li {
+      margin: 0 10px;
+  }
+  nav ul li a {
+      padding: 6px 12px;
+  }
+}
+/* home-styles.css */
+
+body {
+  font-family: 'Lato', sans-serif; /* Lato 400 */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* White */
+  color: #131D26; /* Navy */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #082B59; /* Bright Blue */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f2f2f2; /* White */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(217, 133, 85, 0.2); /* Peach with transparency */
+}
+
+.hero-content {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif; /* Poppins 700 */
+  color: #59331d; /* Coffee */
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.view-coffee-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #D98555; /* Peach */
+  color: #f2f2f2; /* White */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-coffee-button:hover {
+  background-color: #59331d; /* Coffee */
+}
+
+footer {
+  background-color: #131D26; /* Navy */
+  color: #f2f2f2; /* White */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info, .social-links, .disclaimer {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f2f2f2; /* White */
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+      width: 95%;
+  }
+  .hero-content h1 {
+      font-size: 2.5em;
+  }
+  .hero-content p {
+      font-size: 1em;
+  }
+  .view-coffee-button {
+      padding: 10px 20px;
+  }
+  nav ul li {
+      margin: 0 10px;
+  }
+  nav ul li a {
+      padding: 6px 12px;
+  }
+}
+/* carousel-styles.css */
+
+.carousel {
+  width: 80%; /* Adjust as needed */
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Or 'cover' to fill the space */
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* contact-styles.css */
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #131D26;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #082B59;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(217, 133, 85, 0.2);
+}
+
+.contact-content {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-content h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #59331d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 15px 30px;
+  background-color: #D98555;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #59331d;
+}
+
+footer {
+  background-color: #131D26;
+  color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info, .social-links, .disclaimer {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+      width: 95%;
+  }
+  nav ul li {
+      margin: 0 10px;
+  }
+  nav ul li a {
+      padding: 6px 12px;
+  }
+  .contact-form input, .contact-form textarea, .contact-form button {
+      width: 90%;
+  }
+}
+* Adjust logo size */
+.logo {
+  max-width: 150px; /* Adjust this value as needed */
+  height: auto;
+}
+
+/* Optional: Media query for smaller screens (like iPhones) */
+@media (max-width: 480px) {
+  .logo {
+      max-width: 120px; /* Adjust for very small screens */
+  }
+}
+.product-image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below the image */
+  margin-bottom: 10px; /* Add some space between the image and text */
+}
+
+/* Optional: If you want to use object-fit */
+.product-image.object-fit-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 300px; /* or a fixed height */
+}
+
+.product-image.object-fit-contain {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+/* General styles (already in your styles.css) */
+/* ... */
+
+/* iPhone styles */
+@media (max-width: 767px) {
+  /* Adjustments for iPhone */
+  .container {
+      width: 95%; /* Adjust container width */
+      padding: 10px;
+  }
+
+  .product {
+      width: 100%; /* Full-width products on iPhone */
+      margin: 10px 0;
+  }
+
+  .logo {
+      max-width: 120px; /* Adjust logo size */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack navigation items */
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+}
+
+/* iPad styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for iPad */
+  .container {
+      width: 90%; /* Adjust container width */
+  }
+
+  .product {
+      width: 48%; /* Adjust product width for two columns */
+      margin: 10px;
+  }
+
+  .logo {
+      max-width: 180px; /* Adjust logo size */
+  }
+
+  nav ul {
+      justify-content: center; /* Center navigation items */
+  }
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below the image */
+}
